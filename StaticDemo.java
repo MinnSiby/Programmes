@@ -3,7 +3,7 @@ public class StaticDemo {
     String name;
     String email;
     int phNo ;
-    static String University = "MG University";
+    String University = "MG University";
     static int id = 1;
 
 
