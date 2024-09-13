@@ -12,12 +12,14 @@ public class StringReverse
     }
         public static void reverse(String name)
         {
-            String reversed = "";
-            for (int i = name.length() - 1; i >= 0; i--) {
-                reversed += name.charAt(i);
+            StringBuffer reversed = new StringBuffer();
+            for (int i = name.length() - 1; i >= 0; i--)
+            {
+                reversed.append(name.charAt(i));
             }
             System.out.println("Reversed string is : ");
-            System.out.println(reversed);
+            String result = reversed.toString();
+            System.out.println(result);
         }
 
 
