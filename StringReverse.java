@@ -12,7 +12,7 @@ public class StringReverse
     }
         public static void reverse(String name)
         {
-            StringBuffer reversed = new StringBuffer();
+            StringBuilder reversed = new StringBuilder();
             for (int i = name.length() - 1; i >= 0; i--)
             {
                 reversed.append(name.charAt(i));
