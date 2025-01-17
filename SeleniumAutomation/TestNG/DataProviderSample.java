@@ -67,9 +67,9 @@ public void searchWeather(String city) throws InterruptedException
 	
 	By correctCity = By.xpath("//h2[contains(text(),'"+ city +"')]");
 	WebElement displayResult = wait.until(ExpectedConditions.visibilityOfElementLocated(correctCity));
-	String cityname = displayResult.getText();
-	System.out.println("current search city is " +cityname);
-	Assert.assertTrue(firstOptionCity.contains(cityname), " searched incorrect city");
+	String cityName = displayResult.getText();
+	System.out.println("current search city is " +cityName);
+	Assert.assertTrue(firstOptionCity.contains(cityName), " searched incorrect city");
 }
 	
 @AfterClass
